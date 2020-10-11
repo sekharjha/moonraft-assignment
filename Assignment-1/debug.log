@@ -1,0 +1,3 @@
+[1010/225936.625:ERROR:settings.cc(430)] Settings version is not 5
+[1010/230936.638:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\sekha\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\4bdcfb7d-5739-4eca-8049-258c7a972cdc: The system cannot find the path specified. (0x3)
+[1010/230936.639:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
