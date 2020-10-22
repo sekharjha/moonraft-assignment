@@ -23,6 +23,7 @@ export const Item = styled.div`
 export const Container = styled.div`
   padding-left:100px;
   padding-right:100px;
+  padding-bottom:60px;
 `
 export const ContainerHead = styled.h3`
   padding-bottom:40px;

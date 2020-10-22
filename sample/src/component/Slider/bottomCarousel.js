@@ -35,7 +35,7 @@ export default class BottomCarousel extends Component {
             <div>
               <Container>
                 <ContainerHead>Some Of Our Happy Clients, <span style={{color:'#44b272'}}>Join To Them!</span></ContainerHead>
-                <Carousel breakPoints={breakPoints} showArrows={false}>
+                <Carousel className ="topCarousel" breakPoints={breakPoints} showArrows={false}>
                     {items.map(item => <Item key={item.id}><img src={item.url}></img></Item>)}
                 </Carousel>
                 </Container>

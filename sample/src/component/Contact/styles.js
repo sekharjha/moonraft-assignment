@@ -154,7 +154,7 @@ export const contact_form =styled.form `
 export const input =styled.input `
     display:block;
     width:100%;
-    margin:20px 0;
+    margin:10px 0;
     height:50px;
     padding-left:20px;
     font-size:18px;
@@ -167,12 +167,14 @@ export const input =styled.input `
     }
     &:nth-child(2){
         @media (min-width:1000px){
-            transform:translate(23px, 0);
+            transform:translate(16px, 0);
         }
     }
     
 `
-
+export const dualInput = styled(input)`
+    width:49%;
+`
 
 export const inputarea =styled.textarea `
     display:block;

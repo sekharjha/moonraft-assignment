@@ -2,25 +2,36 @@ import React from 'react'
 import { Component } from 'react';
 import axios from 'axios'
 class Input extends Component{
-    state ={
+    constructor(props){
+    super(props);    
+  
+    this.state ={
         email :'',
         password : '',
         returnSecureToken:true
     }
-    handleChange = event=>{
-        this.setState({email:event.target.value,password:event.target.value});
+    this.handleChange = this.handleChange.bind(this);
+    }
+    componentDidUpdate(){
+        console.log(this.state)
+    }
+    handleChange(e){
+        this.setState({
+            [e.target.name]:e.target.value
+        });
     }
     handleSubmit = event =>{
         event.preventDefault();
         const user = {
-            email : 'sekharjha14@gmail.com',
+            email : this.state.email,
             password :this.state.password,
             returnSecureToken:true,
         };
         console.log(JSON.stringify(user))
-        axios.post('https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyBfd2HjJmstw4eqJzmzOmkOluVKNqs6yZc',{user})
+        axios.post('https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyBfd2HjJmstw4eqJzmzOmkOluVKNqs6yZc',user)
         .then(res=>{
-          console.log(res.data)  
+          console.log(res.data)
+          this.props.isLogin = true
         })
     }
     render(){

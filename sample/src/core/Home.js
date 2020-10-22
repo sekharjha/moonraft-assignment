@@ -6,6 +6,7 @@ import Features from '../Container/feature'
 import ProjectCards from '../Container/Projects'
 import BottomCarousel from "../component/Slider/bottomCarousel";
 import Phases from "../Container/Phases"
+import Card from "../component/creativity/Card"
 export default function Home() {
 
   return (
@@ -13,7 +14,9 @@ export default function Home() {
      <CarouselComponent></CarouselComponent>
      <Features></Features>
       <ProjectCards></ProjectCards>
+      
       <Phases></Phases>
+      <Card></Card>
       <BottomCarousel></BottomCarousel>
     </Base>
   );

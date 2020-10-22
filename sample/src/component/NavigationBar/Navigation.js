@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import * as styles from './styles'
 import logo from '../../Assets/Images/logo-2.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'

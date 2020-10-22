@@ -11,7 +11,12 @@ export const Card = styled.div`
             opacity:1;
 }
 `
-
+export const InactiveCard = styled(Card)`
+    opacity:0.3;
+    &:hover .middle{
+            opacity:0;
+}
+`
 export const Image = styled.img`
     opacity: 1;
     width: 100%;

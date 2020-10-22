@@ -1,6 +1,6 @@
 import React from 'react'
 import * as styles from './styles'
-import Contact_Details from './contactDetails'
+import ContactDetails from './contactDetails'
 import {faPhoneAlt, faFax, faGlobe, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () =>{
@@ -23,10 +23,10 @@ const Contact = () =>{
                 <styles.find_us>
                     <styles.heading>Find Us There</styles.heading>
                     <styles.text>Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services.</styles.text>
-                    <Contact_Details sub_heading={'Phone:'} data={'(123)123-456'} logo={faPhoneAlt}/>
-                    <Contact_Details sub_heading={'Fax:'} data={'(123)123-456'} logo={faFax}/>
-                    <Contact_Details sub_heading={'Web'} data = {'#'} link={'www.example.com'} logo={faGlobe}/>
-                    <Contact_Details sub_heading={'E-Mail:'} data={'#'} link={'office@example.com'} logo={faEnvelope}/>
+                    <ContactDetails sub_heading={'Phone:'} data={'(123)123-456'} logo={faPhoneAlt}/>
+                    <ContactDetails sub_heading={'Fax:'} data={'(123)123-456'} logo={faFax}/>
+                    <ContactDetails sub_heading={'Web'} data = {'#'} link={'www.example.com'} logo={faGlobe}/>
+                    <ContactDetails sub_heading={'E-Mail:'} data={'#'} link={'office@example.com'} logo={faEnvelope}/>
 
                 </styles.find_us>
                 <styles.contact_form>
