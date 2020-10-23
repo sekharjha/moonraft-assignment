@@ -36,3 +36,39 @@ export const ContainerHead = styled.h3`
     width: 100%;
 
 `
+export const Buttonleft = styled.button`
+  height:80px;
+  font-size:30px;
+  padding:20px;
+  padding-left:40px;
+  padding-right:40px;
+  border:none;
+  z-index:200;
+  position: absolute;
+  top:50%;
+  &:hover{
+    background-color:#4CAF50;
+    color:white;
+  }
+`
+export const ButtonRight = styled.button`
+  height:80px;
+  font-size:30px;
+  padding:20px;
+  padding-left:40px;
+  padding-right:40px;
+  border:none;
+  z-index:200;
+  position: absolute;
+  margin-left:-80px;
+  top:50%;
+  right:0%;
+  &:hover{
+    background-color:#4CAF50;
+    color:white;
+  }
+`
+export const CarouselContainer = styled.div`
+  display:flex;
+  align-items:row;
+`
