@@ -3,8 +3,15 @@ import * as styles from './styles'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faFacebookF,faGooglePlus, faDribbble, faPinterestP, faTwitter} from '@fortawesome/free-brands-svg-icons'
-const header =()=>{
+import firebase from "../../firebase";
+export default class header extends React.Component{
+    logOut = () =>{
+        console.log("Logout")
+        firebase.auth().signOut();
+      }
+      render(){
         return (
+           
             <div>
                 <styles.header>
                     <styles.info>
@@ -21,9 +28,11 @@ const header =()=>{
                         <styles.pinterest><FontAwesomeIcon back='red' icon={faPinterestP}/></styles.pinterest>
 
                     </styles.icons>
+                    <styles.Button  onClick={this.logOut}>Logout</styles.Button>
                 </styles.header>
+                
             </div>
         );
+      }
 }
 
-export default header;

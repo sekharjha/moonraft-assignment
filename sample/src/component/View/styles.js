@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import image from '../../../../Assets/Images/single-project-02-parallax.jpg'
+import image from '../../Assets/Images/single-project-01-parallax.jpg'
 
 export const container = styled.div `
     padding:30px;
@@ -17,7 +17,6 @@ export const line = styled.div `
     background:#e8e8e8;
     margin-top:15px;
     margin-bottom:15px;
-
 `
 export const slider = styled.div `
     height:400px;
@@ -54,7 +53,6 @@ export const images = styled.div `
     width:66%;
     }
     
-
     
 `
  
@@ -75,7 +73,6 @@ export const img = styled.img `
     }
     
     
-
  `
 
 
@@ -86,36 +83,29 @@ export const content = styled.div `
     width:33%;
     margin-right:50px;
     }
-
 `
 export const data = styled.div `
     margin:20px;
-
 `
 
 export const heading = styled.p `
     margin:40px 20px;
     font-size:26px;
     font-weight:bold;
-
 `
 export const text = styled.p `
      margin:20px;
     font-size:18px;
     line-height:35px;
     
-
 `
 export const data_field = styled.span `
    color:#9e9e9e;
     font-size:19px;
-
-
 `
 export const data_value = styled.span `
     
     font-size:19px;
-
 `
 export const button = styled.button `
     display:block;

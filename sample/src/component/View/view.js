@@ -1,20 +1,20 @@
 import React from 'react'
 import * as styles from './styles'
-import image1 from '../../../../Assets/Images/single-project-02a.jpg'
-import image2 from '../../../../Assets/Images/single-project-02b.jpg'
+import image1 from '../../Assets/Images/project-03.jpg'
+import image2 from '../../Assets/Images/project-02.jpg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {Link} from 'react-router-dom';
 import {faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
-const left = () => {
+const ViewPage = () => {
     
     return(
         <div>
             <styles.slider>
                 <styles.slide>
-                    <styles.arrow><Link to="/Home/creative-ContentRight" style={{textDecoration:'none', color:'white'}}><FontAwesomeIcon  icon={faChevronLeft} size='3x'/></Link> </styles.arrow>
+                    <styles.arrow><Link to="/Home/View/01" style={{textDecoration:'none', color:'white'}}><FontAwesomeIcon  icon={faChevronLeft} size='3x'/></Link> </styles.arrow>
                     <styles.title>Single Project - Content Left</styles.title>
-                    <styles.arrow><Link to="/Home/creative-ContentBottom" style={{textDecoration:'none', color:'white'}}><FontAwesomeIcon  icon={faChevronRight} size='3x'/></Link></styles.arrow>
+                    <styles.arrow><Link to="/Home/View/02" style={{textDecoration:'none', color:'white'}}><FontAwesomeIcon  icon={faChevronRight} size='3x'/></Link></styles.arrow>
                 </styles.slide>
             </styles.slider>
             <styles.container>
@@ -53,4 +53,4 @@ const left = () => {
     )
 }
 
-export default left;
+export default ViewPage;
