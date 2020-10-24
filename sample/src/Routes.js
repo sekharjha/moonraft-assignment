@@ -18,8 +18,8 @@ class Routes extends Component{
   return (
     <BrowserRouter>
       <Switch>
-        {/* <Route exact path="/"  render={()=>!isLog?<Login isLogin = {this.handleLogin}/>:<Home/>}/> */}
-        <Route exact path="/" component = {Home} />
+        <Route exact path="/"  render={()=>!isLog?<Login isLogin = {this.handleLogin}/>:<Home/>}/>
+        {/* <Route exact path="/" component = {Home} /> */}
         <Route path="/Contact" component = {Contact} />
         <Route path="/Pages" component = {View}/>
       </Switch>
